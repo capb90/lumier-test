@@ -1,3 +1,13 @@
-:host {
-  display: block;
+.footer-content {
+  margin-bottom: 20px;
+  p{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content img{
+    display: none;
+   
+  }
 }
