@@ -6,14 +6,13 @@ import {
   signal,
 } from '@angular/core';
 import {
-  DynamicCardComponent,
-  MainLayoutComponent,
-  DynamicTableComponent,
   ButtonActionsComponent,
+  DynamicCardComponent,
+  DynamicTableComponent
 } from '@app/modules/shared';
-import { ConsultingService } from '../../services/consulting.service';
-import { IData } from '../../interfaces/consulting.interfaces';
 import { ColDef, IDateFilterParams } from 'ag-grid-community';
+import { IData } from '../../interfaces/consulting.interfaces';
+import { ConsultingService } from '../../services/consulting.service';
 
 const filterParams: IDateFilterParams = {
   comparator: (filterLocalDateAtMidnight: Date, cellValue: string) => {
@@ -69,7 +68,7 @@ const columns: ColDef<IData>[] = [
 
 @Component({
   selector: 'app-home',
-  imports: [MainLayoutComponent, DynamicCardComponent, DynamicTableComponent],
+  imports: [DynamicCardComponent, DynamicTableComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
