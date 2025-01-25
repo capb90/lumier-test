@@ -1,0 +1,95 @@
+<app-main-layout>
+  <app-dynamic-card
+    title="Módulo de consulta - Consultas Estudio - Paciente"
+    subtitle="A IPS DEMO 1"
+  />
+  <app-dynamic-card
+    title="CONSULTA HISTORIAL ESTUDIO - PACIENTE"
+    subtitle="Resultados de la consulta"
+    [marginTop]="30"
+  >
+    <div ngProjectAs="card-content">
+      <button class="btn btn-sm btn-secondary me-1">
+        <i class="fa-solid fa-refresh"></i>
+      </button>
+      <button
+        class="btn btn-sm btn-success me-1"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+      >
+        Compartir
+      </button>
+      <button class="btn btn-sm btn-warning">
+        <i class="fa-solid fa-print me-2"></i>Instructivo
+      </button>
+    </div>
+    <app-dynamic-table [columnDefs]="columnDef" [dataSet]="dataSet()" />
+  </app-dynamic-card>
+</app-main-layout>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="staticBackdrop"
+  tabindex="-1"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-3 shadow">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="customModalLabel">Compartir estudios</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="firstSelect" class="form-label">Compartir por</label>
+            <select id="firstSelect" class="form-select">
+              <option value="" disabled selected>Seleccione</option>
+              <option value="wpp">Whatsapp</option>
+              <option value="Email">Email</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="phoneNumber" class="form-label"
+              >Número de Celular</label
+            >
+            <input
+              type="tel"
+              id="phoneNumber"
+              class="form-control"
+              placeholder="Ingrese su número de celular"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="secondSelect" class="form-label"
+              >Vigencia del link</label
+            >
+            <select id="secondSelect" class="form-select">
+              <option value="wpp">1 día</option>
+              <option value="semana">1 semana</option>
+              <option value="mes">1 mes</option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cerrar
+        </button>
+        <button type="button" class="btn btn-success">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>

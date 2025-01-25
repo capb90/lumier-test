@@ -1,1 +1,38 @@
-/* You can add global styles to this file, and also import other style files */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #20d7ea;
+  --bs-btn-border-color: #20d7ea;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #20d6eaa3;
+  --bs-btn-hover-border-color: #20d7ea;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #20d7ea;
+  --bs-btn-active-border-color: #20d7ea;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #20d7ea;
+  --bs-btn-disabled-border-color: #20d7ea;
+}
+
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #29d585;
+  --bs-btn-border-color: #29d585;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #29d585a1;
+  --bs-btn-hover-border-color: #29d585;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #29d585;
+  --bs-btn-active-border-color: #29d585;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #29d585;
+  --bs-btn-disabled-border-color: #29d585;
+}
+
+.form-check-input:checked {
+  background-color: #20d7ea;
+  border-color: #20d7ea;
+}

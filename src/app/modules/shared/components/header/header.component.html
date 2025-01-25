@@ -1,0 +1,30 @@
+<header class="header d-flex justify-content-between align-items-center">
+  <div class="d-flex align-items-center">
+    <img
+      src="logo-lumier-2.svg"
+      alt="Logo"
+      class="img-fluid me-2"
+      width="40"
+    />
+  </div>
+  <div class="dropdown">
+    <button
+      class="btn btn-link dropdown-toggle btn-menu"
+      variant="link"
+      id="dropdownMenuButton"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+      no-caret
+    >
+      <i class="fa-solid fa-user"></i>
+      <span>Lumier Prueba</span>
+    </button>
+    <ul
+      class="dropdown-menu dropdown-menu-end"
+      aria-labelledby="dropdownMenuButton"
+    >
+      <li><button class="dropdown-item btn btn-link"><i class="fa-solid fa-pencil me-3"></i>Editar perfil</button></li>
+      <li><button class="dropdown-item btn btn-link" routerLink="/login"><i class="fa-solid fa-arrow-right-from-bracket me-3"></i>Cerrar sesión</button></li>
+    </ul>
+  </div>
+</header>

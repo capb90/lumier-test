@@ -1,0 +1,30 @@
+.input-group-text {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: transparent;
+}
+
+
+.login-label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.btn {
+  border-radius: 8px;
+}
+
+.btn-custom,
+.btn-custom:hover {
+  border: none;
+  background-color: #DCE1FF;
+}
+
+hr.stylish-gradient {
+  border: 0;
+  height: 1px;
+  background:#114461;
+  border-radius: 5px;
+}

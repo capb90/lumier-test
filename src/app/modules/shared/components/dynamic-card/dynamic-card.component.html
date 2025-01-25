@@ -1,0 +1,18 @@
+<div class="card" [ngStyle]="{ 'margin-top': marginTopStyle() }">
+  <div class="card-body">
+    <div class="card-title d-flex justify-content-between">
+      <p class="card-text text-title">
+        {{ title() }}
+        <br />
+        <span class="text-description">{{ subtitle() }}</span>
+      </p>
+      <ng-content select="card-content">
+
+      </ng-content>
+    </div>
+
+    <div class="card-main-content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

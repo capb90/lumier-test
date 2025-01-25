@@ -1,0 +1,13 @@
+.footer-content {
+  margin-bottom: 20px;
+  small{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content img{
+    display: none;
+   
+  }
+}

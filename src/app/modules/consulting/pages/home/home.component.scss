@@ -1,0 +1,25 @@
+.modal-content {
+  border-radius: 1.5rem; 
+  background-color: #ffffff; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none; 
+}
+
+.modal-body {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.vr {
+  width: .5px;
+  background-color: #000; 
+  height: 20%;
+}
